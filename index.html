@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="container hidden">
+        <header>
+            <h1>Task Manager</h1>
+            <div class="tabs">
+                <button id="taskTab" class="tab-button active">Tasks</button>
+                <button id="completedTab" class="tab-button">Completed</button>
+            </div>
+        </header>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <section id="taskSection">
+            <ul id="taskList"></ul>
+        </section>
+        <section id="completedSection" class="hidden">
+            <ul id="completedTaskList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
