@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             addTask();
         }
     });
-
+    
     taskTab.addEventListener('click', () => switchTab('tasks'));
     completedTab.addEventListener('click', () => switchTab('completed'));
 
